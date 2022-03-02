@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/*  NavBar Styling */
+.navbar {
+  background-color: #021831;
+  color: white;
+  height: 70px;
+}
+
+.website-name{
+    font-size: 30px;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 40px;
+}
+
+.navbar ul {
+    list-style-type: none;
+  display: flex;
+}
+
+.navbar a {
+  color: white;
+  padding: 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+
+/* Main Body */
+.body-1 {
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  color: #ffff;
+  position: relative;
+}
+
+.body-2{
+    height: 500px;
+    background-color: #113f4d;
+    color: #ffff;
+    /* This add the slant; delete this if just want a rectangle */
+    clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.body-title{
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+
+/* Footer */
+.footer{
+    color: white;
+}
+
+.footer-container{
+    padding: 25px;
+    background-color: #011222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
