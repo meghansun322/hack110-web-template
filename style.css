@@ -49,17 +49,21 @@ body {
   border-bottom: 2px #fff solid;
 }
 
+.active-page{
+    border-bottom: 2px #fff solid;
+}
+
 
 /* Main Body */
 .body-1 {
-  height: 500px;
+  height: 550px;
   background-color: rgb(255, 255, 255);
   color: #ffff;
   position: relative;
 }
 
 .body-2{
-    height: 500px;
+    height: 550px;
     background-color: #113f4d;
     color: #ffff;
     /* This add the slant; delete this if just want a rectangle */
