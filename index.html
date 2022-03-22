@@ -5,21 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <!-- Links to Styles Sheet -->
+    <!-- This links to our style.css or stylesheet-->
     <link rel="stylesheet" href="style.css">
-    <!-- Font Links -->
+
+    <!-- Font Links: Go to https://fonts.google.com/ to find a font of your liking! Hit select for font and styles and copy and paste <link> tag provided. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <title>Hack110 Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Put Title of your Website Here! -->
+    <title>Welcome to Hack110</title>
 </head>
 
-    <!-- Navigation Bar -->
+    <!-- Navigation Bar: This will hold website name/logo and possible pages! -->
     <nav class="navbar">
+       
+        <!-- .navbar-container class is what controls the alignment and spacement of the .website-name and .nav-links -->
         <div class="navbar-container">
+            
+            <!-- Website Name -->
+            <!-- - Note: this is a h1 tag, which has it's preset styling and font size. h2, h3 decreses in font size and you can also adjust text styling by directly changing css for .website-name class  -->
             <h1 class="website-name">Hack110</h1>
+            
+            <!-- Links to pages you want to add to your site -->
             <div class="nav-links">
+                <!-- the ul tag intializes an unorder list; the li tag represents an item on the list -->
                 <ul>
+                    <!-- Assigned href to the html file you want the link to direct to; href can link to HTML FILES or URL LINKS -->
                     <li><a href="index.html">Home</a></li>
                     <li><a href="explore.html">Explore</a></li>
                 </ul>
@@ -27,14 +42,25 @@
         </div>
     </nav>
     
-
+    <!-- Main Body Section -->
     <body>
-     <!-- Main Body Sections -->
     <section class="body-1">
         <div class="body-title">Welcome To Hack110!</div>
+        <p class="body-text">Hack110 is COMP110's bi-annual hackathon focused on getting beginner programmers into project ideation, collaboration, and (of course) creation!</p>
+        <button type="button"><a href="explore.html">Explore Here!</a></button>
     </section>
 
-    <section class="body-2"></section>
+    <section class="body-2">
+        <div class="body-title-white">Gallery</div>
+        <div class="photo-grid">
+            <img class="grid-item" src="hack110.jpeg">
+            <img class="grid-item" src="hack110-img2.jpeg">
+            <img class="grid-item" src="hack110-img3.jpeg">
+            <img class="grid-item" src="hack110-img4.jpeg">
+            <img class="grid-item" src="hack110.jpeg">
+            <img class="grid-item" src="hack110-img2.jpeg">
+        </div>
+    </section>
       
     </body>
     
@@ -42,6 +68,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
+                <!-- Put your names here! -->
                 <div class="footer-description">Name 1 and Name 2</div>
                 <p>Made With Love <span>&#64;</span> Hack110 2022</p>
 

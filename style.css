@@ -8,15 +8,23 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Arimo', sans-serif;
   color: #333;
   line-height: 1.6;
 }
 
+.body-title{
+  font-size: 100px;
+}
+
 /*  NavBar Styling */
+
 .navbar {
+  /* Sets color of NavBar */
   background-color: #021831;
+  /* Sets color of text */
   color: white;
+  /* Sets height or NavBar */
   height: 70px;
 }
 
@@ -24,6 +32,7 @@ body {
     font-size: 30px;
 }
 
+/* This di */
 .navbar-container{
     display: flex;
     justify-content: space-between;
@@ -54,16 +63,19 @@ body {
 }
 
 
-/* Main Body */
+/* Main Body Styling */
+
 .body-1 {
-  height: 550px;
+  height: 450px;
+  padding: 0 40px;
   background-color: rgb(255, 255, 255);
   color: #ffff;
   position: relative;
 }
 
 .body-2{
-    height: 550px;
+  padding: 0 40px;
+  height: 800px; 
     background-color: #113f4d;
     color: #ffff;
     /* This add the slant; delete this if just want a rectangle */
@@ -72,14 +84,65 @@ body {
 
 .body-title{
     color: black;
-    text-align: center;
-    padding-top: 50px;
-    font-size: 40px;
+    text-align: left;
+    padding-top: 100px;
+    font-size: 60px;
     font-weight: 500;
 }
 
+.body-title-white{
+  color: white;
+  text-align: right;
+  padding-top: 80px;
+  
+  font-size: 60px;
+  font-weight: 500;
+}
 
-/* Footer */
+.body-text{
+  color: black;
+  text-align: left; 
+  font-size: 22px;
+    margin-right: 6em;
+    padding-bottom: 20px;
+}
+
+button{
+  border: none;
+  height: 50px;
+  width: 150px;
+  background-color: #021831;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+button a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+button:hover{
+  background-color: #6251fa;
+}
+
+.photo-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+
+.grid-item{
+  height: 300px;
+  width: 400px;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* Footer Styling */
+
 .footer{
     color: white;
 }
