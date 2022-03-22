@@ -1,21 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-
-
+/* This resets an standard styling - don't need to worry about this part */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-body {
+  /* Sets the font for the website */
   font-family: 'Arimo', sans-serif;
-  color: #333;
-  line-height: 1.6;
 }
 
-.body-title{
-  font-size: 100px;
-}
 
 /*  NavBar Styling */
 
@@ -29,31 +20,40 @@ body {
 }
 
 .website-name{
+    /* As the name states, changes size of font */
     font-size: 30px;
 }
 
-/* This di */
+/* This displays the contents in the navigation bar; We are using a FLEX display and can read more here: https://www.w3schools.com/cssref/css3_pr_flex.asp */
 .navbar-container{
     display: flex;
+    /* Seperates our two DIVS (website name and links) and puts space between, thus pushing them on opposite sides of the page */
     justify-content: space-between;
+    /* Centers text vertically */
     align-items: center;
     height: 100%;
-    padding: 0 40px;
+    /* Puts space around an element. Can use padding-top, padding-right, padding-bottom, and padding-left or JUST PADDING. */
+    /* padding: TOP RIGHT BOTTOM LEFT -> padding: 10px 20px 10px 20px puts padding on respective positions*/
+    padding: 0 40px 0 40px;
 }
 
 .navbar ul {
-    list-style-type: none;
+  /* Removes defauly styling of ul tag */
+  list-style-type: none;
   display: flex;
 }
 
 .navbar a {
   color: white;
   padding: 10px;
-  margin: 0 5px;
+  /* Creates spacing around an element's border -> NOTE padding creates spacing between element's border and content */
+  margin: 0 5px 0 5px;
+  /* For a tag, usually want to remove text-decoration and add our own styling */
   text-decoration: none;
   
 }
 
+/* A line appears when we hover over this a tag */
 .navbar a:hover {
   border-bottom: 2px #fff solid;
 }
@@ -65,55 +65,78 @@ body {
 
 /* Main Body Styling */
 
+/* Styling for the body tag */
+body {
+  color: #333;
+  line-height: 1.6;
+}
+
+.body-title{
+  font-size: 100px;
+}
+
+
 .body-1 {
   height: 450px;
-  padding: 0 40px;
+  padding: 0 40px 0 40px;
   background-color: rgb(255, 255, 255);
   color: #ffff;
-  position: relative;
+
 }
 
 .body-2{
-  padding: 0 40px;
+  padding: 0 40px 0 40px;
+  /* Sets height of this section */
   height: 800px; 
-    background-color: #113f4d;
-    color: #ffff;
-    /* This add the slant; delete this if just want a rectangle */
-    clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 100%);
+  background-color: #113f4d;
+  color: #ffff;
+  /* This add the slant; delete this if just want a rectangle -> Navigate here to create your own polygon: https://bennettfeely.com/clippy/ */
+  clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .body-title{
     color: black;
+    /* Pushes the title to the left side fo page */
     text-align: left;
-    padding-top: 100px;
+    /* Pushing Text Down */
+    padding-top: 120px;
     font-size: 60px;
+    /* Makes Text bolder */
     font-weight: 500;
 }
 
 .body-title-white{
   color: white;
+  /* Pushes text to right */
   text-align: right;
+  /* Pushes text down */
   padding-top: 80px;
-  
+  /* Pushes elements below down */
+  padding-bottom: 20px;
   font-size: 60px;
+  /* Bolds Text */
   font-weight: 500;
 }
 
 .body-text{
   color: black;
-  text-align: left; 
   font-size: 22px;
-    margin-right: 6em;
-    padding-bottom: 20px;
+  margin-right: 6em;
+  /* Creates space between this element and the one below it */
+  padding-bottom: 20px;
 }
 
 button{
+  /* Removes default styling */
   border: none;
+  /* Sets demensions of button */
   height: 50px;
   width: 150px;
   background-color: #021831;
   color: white;
+  /* Rounds the corner of the rectangle */
   border-radius: 7px;
+  /* Changes cursor to pointer when you hover over element */
   cursor: pointer;
 }
 
@@ -123,21 +146,22 @@ button a{
   font-size: 16px;
 }
 
+/* Changes the color when we hover over element */
 button:hover{
-  background-color: #6251fa;
+  background-color: #f12da6;
 }
 
 .photo-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
   
 }
 
 .grid-item{
-  height: 300px;
-  width: 400px;
-  text-align: center;
-  padding: 20px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 
