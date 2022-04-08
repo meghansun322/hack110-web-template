@@ -58,7 +58,9 @@
   border-bottom: 2px #fff solid;
 }
 
+
 .active-page{
+  /* Adds a line at bottom of element; border-bottom: thickness color line-type */
     border-bottom: 2px #fff solid;
 }
 
@@ -68,6 +70,7 @@
 /* Styling for the body tag */
 body {
   color: #333;
+  /* Adjust spacing between lines from text */
   line-height: 1.6;
 }
 
@@ -75,13 +78,11 @@ body {
   font-size: 100px;
 }
 
-
 .body-1 {
   height: 450px;
   padding: 0 40px 0 40px;
   background-color: rgb(255, 255, 255);
   color: #ffff;
-
 }
 
 .body-2{
@@ -151,9 +152,14 @@ button:hover{
   background-color: #f12da6;
 }
 
+/* We are creating a GRID display here */
 .photo-grid{
+  /* Declare display type */
   display: grid;
+  /* Tells us how many columns we want and the realative sizing of it */
+  /* Here, we are saying that want 3 columns per row that are all the same size */
   grid-template-columns: 1fr 1fr 1fr;
+  /* Puts a gap between between each item */
   grid-gap: 20px;
   
 }
@@ -161,6 +167,7 @@ button:hover{
 .grid-item{
   height: 100%;
   width: 100%;
+  /* Allows photos fit proportionally within the container  */
   object-fit: cover;
 }
 
